@@ -3,7 +3,7 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world;
-var hammer,stone,rubber,plane;
+var hammer,stone,rubber,plane,iron;
 
 
 function setup(){
@@ -15,7 +15,7 @@ function setup(){
     hammer = new Hammer(10,100);
     stone = new Stone(700,320,100,100)
     rubber = new Rubber(900,450,70)
-  
+    iron = new Iron(300,350)
 
 
 }
@@ -29,7 +29,7 @@ function draw(){
     hammer.display();
     stone.display();
     rubber.display();
-
+    iron.display();
     
  
 }
